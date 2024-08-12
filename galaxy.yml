@@ -1,12 +1,16 @@
 namespace: "ji_podhead"
 name: "libvirt_as_code"
 description:  "automatically creates vms, installs libvirt, updates vault, signs ssh keys, creates passwords and facts, provisiones machines using cloudinit."
-version: "0.0.0"
+version: "0.0.1"
 readme: "README.md"
 authors:
     - "ji-podhead (https://https://www.github.com/ji-podhead)"
 dependencies:
     community.general: ">=0.0.0"
+    community.hashi_vault:  ">=0.0.0"
+    jm1.libvirt:  ">=0.0.0"
+    community.libvirt:  ">=0.0.0"
+    ji_podhead.host_prototypes:  ">=0.0.0"
 license:
     - "MIT"
 tags:
