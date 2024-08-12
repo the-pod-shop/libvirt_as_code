@@ -1,0 +1,10 @@
+  - name: Fetch cloud image, create storage volumes and define domain (virtual machine)
+    delegate_to: "localhost"
+    import_role: 
+      name: ji_podhead.host_prototypes.create_prototypes
+    vars:  
+        group: 'workshop_machines'
+        inventory_path:  /home/ji/Dokumente/podshop-org/Pod-Shop-App-Configs/ansible/inventory.yml
+        yaml_path: "/home/ji/Dokumente/podshop-org/Pod-Shop-App-Configs/yamlgen"
+        store_yaml: "True"
+        target_group: vms

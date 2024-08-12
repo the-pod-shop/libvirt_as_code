@@ -1,0 +1,37 @@
+{
+ "collection_info": {
+  "namespace": "ji_podhead",
+  "name": "libvirt_as_code",
+  "version": "0.0.0",
+  "authors": [
+   "ji-podhead (https://https://www.github.com/ji-podhead)"
+  ],
+  "readme": "README.md",
+  "tags": [
+   "host_prototypes",
+   "random_mac_and_random_pass",
+   "random_ssh_keys",
+   "dynamic_host_creation"
+  ],
+  "description": "a little collection that creates hosts from prototypes. it also creates private,public keys, random mac and random pass",
+  "license": [
+   "MIT"
+  ],
+  "license_file": null,
+  "dependencies": {
+   "community.general": ">=0.0.0"
+  },
+  "repository": "https://www.github.com/the-pod-shop/host_prototypes",
+  "documentation": null,
+  "homepage": null,
+  "issues": null
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "97111bec6239540873181df8fd3c83ccde6a9fde55d03086bc04e5835891ec20",
+  "format": 1
+ },
+ "format": 1
+}
