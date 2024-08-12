@@ -1,0 +1,16 @@
+- name: Erstelle neue host
+  loop: "{{ groups['target_group_name'] }}"
+  loop_control:
+    loop_var: host
+  community.hashi_vault.vault_kv2_write:
+    token: '{{vault_token}}'
+    url: http://127.0.0.1:8200
+    engine_mount_point: {{"vault_kv_mount_path"}}
+    path: "{{path_prefix}}/{{ host }}"
+    data:
+          >-
+      {% for key, value in item["vars"].items() %}
+        {% if key in "{{facts}}" or facts is "all" %}
+          {{ key }}: "{{ value }}"
+        {% endif %}
+      {% endfor %}

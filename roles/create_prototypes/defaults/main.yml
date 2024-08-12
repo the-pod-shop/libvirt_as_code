@@ -1,8 +1,9 @@
 ---
+# prototypes
 yaml_path: "./yamlgen"
 group: ""
 store_yaml: "False"
-inventory_path: "./inventory"
+inventory_path: "/home/ji/Dokumente/podshop-org/Pod-Shop-App-Configs/ansible/inventory.yml"
 target_group: prototypes
 target_group_state: present
 target_group_gid: 1000

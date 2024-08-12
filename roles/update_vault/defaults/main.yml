@@ -1,0 +1,7 @@
+---
+# prototypes
+vault_token: "./yamlgen"
+path_prefix: "ansible/libvirt"
+vault_kv_mount_path: "False"
+facts: all
+target_group: prototypes
